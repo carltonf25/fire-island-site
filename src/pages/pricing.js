@@ -21,15 +21,14 @@ const ContentSection = styled.div`
   }
 
   h1 {
-    font-size: 52px;
+    font-size: 2.5em;
   }
 
   h3 {
     color: #ff3547;
   }
   p {
-    font-size: 20px;
-    line-height: 25px;
+    font-size: 1.1em;
   }
 `
 

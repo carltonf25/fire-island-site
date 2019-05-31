@@ -21,10 +21,10 @@ const ContentSection = styled.div`
   }
 
   h1 {
-    font-size: 52px;
+    font-size: 2.5em;
   }
   p {
-    font-size: 20px;
+    font-size: 1.1em;
     line-height: 25px;
   }
   @media screen and (max-width: 375px) {

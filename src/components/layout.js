@@ -43,7 +43,9 @@ const Layout = ({ children }) => (
             }}
           >
             © {new Date().getFullYear()} Built with ❤️ by{" "}
-            <a href="https://www.fireis.land">Fire Island</a>
+            <a style={{ color: `#ff3547` }} href="https://www.fireis.land">
+              Fire Island
+            </a>
           </footer>
         </div>
       </>
