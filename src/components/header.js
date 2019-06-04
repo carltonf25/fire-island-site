@@ -1,8 +1,9 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
-import React from "react"
+import React, { useState } from "react"
 import styled from "styled-components"
 import logo from "../images/logo.svg"
+import whiteLogo from "../images/logo-white.svg"
 
 const HeaderWrapper = styled.header`
   background: #f9f9f9;
@@ -21,9 +22,6 @@ const HeaderWrapper = styled.header`
     fill: #ff3547;
   }
 
-  .tiki-logo {
-    fill: #ff3547;
-  }
   :hover {
     background: #ff3547;
     a {
@@ -77,19 +75,34 @@ const HeaderNav = styled.nav`
   }
 `
 
-const Header = ({ siteTitle }) => (
-  <HeaderWrapper>
-    <span style={{ textAlign: `center`, margin: 0 }}>
-      <img classname="tiki-logo" src={logo} />
-      <h1 style={{ marginTop: `0`, color: `#ff3547` }}>Fire Island</h1>
-    </span>
-    <HeaderNav>
-      <Link to="/">Services</Link>
-      <Link to="/pricing">Pricing</Link>
-      <Link to="/">Our Work</Link>
-    </HeaderNav>
-  </HeaderWrapper>
-)
+const Header = ({ siteTitle }) => {
+  let [hovered, setHovered] = useState(false)
+  return (
+    <HeaderWrapper
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+    >
+      <div
+        style={{
+          margin: `0 auto`,
+          display: `flex`,
+          justifyContent: `center`,
+          alignItems: `center`,
+        }}
+      >
+        <span style={{ textAlign: `center`, margin: 0 }}>
+          {hovered ? <img src={whiteLogo} /> : <img src={logo} />}
+          <h1 style={{ marginTop: `0`, color: `#ff3547` }}>Fire Island</h1>
+        </span>
+        <HeaderNav>
+          <Link to="/">Services</Link>
+          <Link to="/pricing">Pricing</Link>
+          <Link to="/">Our Work</Link>
+        </HeaderNav>
+      </div>
+    </HeaderWrapper>
+  )
+}
 
 Header.propTypes = {
   siteTitle: PropTypes.string,

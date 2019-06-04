@@ -60,24 +60,28 @@ const PricingPage = () => (
         <h1>Pricing</h1>
         <h3>Fully Custom Website: $1K - 3K+</h3>
         <p>
-          Our flagship solution includes our proven discovery process, where we
-          dive deep into your business, your customers, and your competition to
-          figure out the very best online strategy for your business. We’ll then
-          design a fully custom website that best serves that strategy. As with
-          all of our web projects, the goal is to get as many conversions for
-          your business as possible.
+          Our flagship solution begins with a discovery meeting, where we dive
+          deep into your business and customers to figure out the very best
+          online strategy for your business. We’ll then design and develop a
+          fully custom website that best serves that strategy.
         </p>
         <h3>Marketing Channel Setup: $60 - $300+</h3>
         <p>
           Your website should serve as the central hub for your business, but
           marketing channels like Email, Facebook Ads, or Instagram posts can be
-          powerful tools for extending your reach and growing your audience.
+          powerful tools for extending your reach, growing your audience, and by
+          extension, growing your business.
         </p>
         <p>
           We have extensive experience in marketing platforms, and can use this
           knowledge to help you grow your business and make more money online.
         </p>
-        <CallButton>Schedule a Call</CallButton>
+        <a
+          target="blank"
+          href="https://calendly.com/fire-island/free-quote-info-gathering"
+        >
+          <CallButton>Schedule a Call</CallButton>
+        </a>
       </div>
     </ContentSection>
   </Layout>

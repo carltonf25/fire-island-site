@@ -72,7 +72,12 @@ const IndexPage = () => (
           We’ll create a website that tells your story and builds the business
           you want.
         </p>
-        <CallButton>Schedule a Call</CallButton>
+        <a
+          target="blank"
+          href="https://calendly.com/fire-island/free-quote-info-gathering"
+        >
+          <CallButton>Schedule a Call</CallButton>
+        </a>
       </div>
     </ContentSection>
     <ContentSection>
