@@ -21,10 +21,10 @@ const ContentSection = styled.div`
   }
 
   h1 {
-    font-size: 2.5em;
+    font-size: 3em;
   }
   p {
-    font-size: 1.1em;
+    font-size: 1.2em;
     line-height: 25px;
   }
   @media screen and (max-width: 375px) {
@@ -68,12 +68,26 @@ const IndexPage = () => (
         <p>
           A web services company specializing in beautiful web design and
           effective web strategies for businesses. We’ll create a website that
-          tells your story, attracts customers, and builds the business you
-          want.
+          builds the business you want.
+        </p>
+        <p>
+          Your business has a story, and it deserves to be told. We are
+          committed to learning as much as possible about your business and
+          customers so that we can tell that story as effectively as possible,
+          and help you thrive online.
+        </p>
+      </div>
+    </ContentSection>
+    <ContentSection>
+      <div>
+        <h1>Don't settle for a cookie-cutter site</h1>
+        <p>
+          A custom website tailored to you is a round-the-clock way to attract
+          customers and generate revenue.
         </p>
         <p>
           We're here to help your business thrive online. Schedule a call with
-          us to get a free quote on a custom website or other services.
+          us to get a free quote on a custom website or other web services.
           <br />
           <br />
           <i>
@@ -87,23 +101,6 @@ const IndexPage = () => (
         >
           <CallButton>Schedule a Call</CallButton>
         </a>
-      </div>
-    </ContentSection>
-    <ContentSection>
-      <div>
-        <h1>Don't settle for a cookie-cutter site</h1>
-        <p>
-          Launch party creative business-to-business facebook. Launch party
-          branding series A financing founders network effects buyer beta
-          vesting period research & development strategy long tail product
-          management.
-        </p>
-        <p>
-          Assets android mass market termsheet launch party metrics release
-          strategy gen-z entrepreneur. Traction business-to-business validation
-          metrics holy grail churn rate pitch android growth hacking advisor
-          beta marketing graphical user interface agile development.
-        </p>
       </div>
     </ContentSection>
   </Layout>

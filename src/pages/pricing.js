@@ -21,14 +21,15 @@ const ContentSection = styled.div`
   }
 
   h1 {
-    font-size: 2.5em;
+    font-size: 3em;
+  }
+  p {
+    font-size: 1.2em;
+    line-height: 25px;
   }
 
   h3 {
     color: #ff3547;
-  }
-  p {
-    font-size: 1.1em;
   }
 `
 
@@ -68,10 +69,8 @@ const PricingPage = () => (
         </p>
         <h3>Marketing Channel Setup: $60 - $300+</h3>
         <p>
-          Your website should serve as the central hub for your business, but
-          marketing channels like Email, Facebook Ads, or Instagram posts can be
-          powerful tools for extending your reach, growing your audience, and by
-          extension, growing your business.
+          Marketing channels like Email, Facebook Ads, or Instagram posts are
+          powerful tools that you should absolutely be using.{" "}
         </p>
         <p>
           We have extensive experience in marketing platforms, and can use this
