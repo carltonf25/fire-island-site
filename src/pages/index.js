@@ -38,21 +38,22 @@ const ContentSection = styled.div`
 
 const CallButton = styled.button`
   border: none;
+  border-radius: 3px;
   background: #ff3547;
   color: #fff;
-  font-size: 1em;
   font-weight: bold;
   text-transform: uppercase;
-  padding: 1em 2em;
+  font-size: 1em;
+  padding: 1em 1em;
   cursor: pointer;
   box-shadow: 0px 1px 3px 1px rgb(0, 0, 0, 0.14);
   transition: 0.3s ease-in-out;
   :hover {
-    background: #fff3f3;
-    color: #ff3547;
-    :after {
-      content: " 📱";
-    }
+    box-shadow: 0px 3px 4px 2px rgb(0, 0, 0, 0.14);
+    transform: translate3d(0px, -1px, 0);
+  }
+  :active {
+    box-shadow: 0px 1px 2px 1px rgb(0, 0, 0, 0.14);
   }
 `
 
@@ -66,11 +67,19 @@ const IndexPage = () => (
         </h1>
         <p>
           A web services company specializing in beautiful web design and
-          effective web strategies for businesses.
+          effective web strategies for businesses. We’ll create a website that
+          tells your story, attracts customers, and builds the business you
+          want.
         </p>
         <p>
-          We’ll create a website that tells your story and builds the business
-          you want.
+          We're here to help your business thrive online. Schedule a call with
+          us to get a free quote on a custom website or other services.
+          <br />
+          <br />
+          <i>
+            It's just a quick, casual conversation to get to know you, and see
+            if we're a good fit.
+          </i>
         </p>
         <a
           target="blank"

@@ -34,21 +34,22 @@ const ContentSection = styled.div`
 
 const CallButton = styled.button`
   border: none;
+  border-radius: 3px;
   background: #ff3547;
   color: #fff;
-  font-size: 1em;
   font-weight: bold;
   text-transform: uppercase;
-  padding: 1em 2em;
+  font-size: 1em;
+  padding: 1em 1em;
   cursor: pointer;
   box-shadow: 0px 1px 3px 1px rgb(0, 0, 0, 0.14);
   transition: 0.3s ease-in-out;
   :hover {
-    background: #fff3f3;
-    color: #ff3547;
-    :after {
-      content: " 📱";
-    }
+    box-shadow: 0px 3px 4px 2px rgb(0, 0, 0, 0.14);
+    transform: translate3d(0px, -1px, 0);
+  }
+  :active {
+    box-shadow: 0px 1px 2px 1px rgb(0, 0, 0, 0.14);
   }
 `
 
@@ -75,6 +76,17 @@ const PricingPage = () => (
         <p>
           We have extensive experience in marketing platforms, and can use this
           knowledge to help you grow your business and make more money online.
+        </p>
+        <hr />
+        <p>
+          We're here to help you thrive online. Schedule a call with us to get
+          your free quote, and start the next chapter for your business.
+          <br />
+          <br />
+          <i>
+            It's just a quick, casual conversation to get to know you, and see
+            if we're a good fit.
+          </i>
         </p>
         <a
           target="blank"

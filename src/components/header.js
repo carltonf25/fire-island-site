@@ -31,6 +31,10 @@ const HeaderWrapper = styled.header`
       :hover {
         border-bottom: 2px solid #fff3f3;
       }
+      button {
+        background: #f9f9f9;
+        color: #ff3547;
+      }
     }
   }
   h1 a {
@@ -67,11 +71,32 @@ const HeaderNav = styled.nav`
     margin-left: 1em;
     text-decoration: none;
     color: #4a4a4a;
-    transition: 0.2s ease-in-out;
+    transition: 0.3s ease-in-out;
     :hover {
       text-decoration: none;
       border-bottom: 2px solid #ee7373;
     }
+  }
+`
+const CallButton = styled.button`
+  border: none;
+  border-radius: 3px;
+  background: #ff3547;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  padding: 1em 1em;
+  cursor: pointer;
+  box-shadow: 0px 1px 3px 1px rgb(0, 0, 0, 0.14);
+  transition: all 0.3s ease-in-out;
+  :hover {
+    background: #fff3f3;
+    transform: translate3d(0px, -1px, 0);
+    box-shadow: 0px 3px 4px 2px rgb(0, 0, 0, 0.14);
+  }
+  :active {
+    box-shadow: 0px 1px 2px 1px rgb(0, 0, 0, 0.14);
   }
 `
 
@@ -97,7 +122,31 @@ const Header = ({ siteTitle }) => {
         <HeaderNav>
           <Link to="/">Services</Link>
           <Link to="/pricing">Pricing</Link>
-          <Link to="/">Our Work</Link>
+          <a
+            target="blank"
+            style={{ borderBottom: `none` }}
+            href="https://calendly.com/fire-island/free-quote-info-gathering"
+          >
+            <CallButton
+              style={
+                hovered
+                  ? {
+                      marginLeft: `1em`,
+                      transition: `0.3s ease-in-out`,
+                      background: `#f9f9f9`,
+                      color: `#ff3547`,
+                    }
+                  : {
+                      marginLeft: `1em`,
+                      transition: `0.3s ease-in-out`,
+                      background: `#ff3547`,
+                      color: `#f9f9f9`,
+                    }
+              }
+            >
+              Schedule a Call
+            </CallButton>
+          </a>
         </HeaderNav>
       </div>
     </HeaderWrapper>
