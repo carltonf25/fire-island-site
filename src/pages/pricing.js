@@ -30,6 +30,7 @@ const ContentSection = styled.div`
 
   h3 {
     color: #ff3547;
+    font-size: 1.3em;
   }
 `
 
